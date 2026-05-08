@@ -16,7 +16,6 @@ import { errorHandler } from './middleware/errorHandler.js';
 await connectDB();
 
 // ── App ───────────────────────────────────────────────────────────────────────
-
 const app = express();
 
 // ── Security headers ──────────────────────────────────────────────────────────

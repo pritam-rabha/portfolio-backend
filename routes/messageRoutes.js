@@ -30,8 +30,8 @@ const contactRules = [
   body('message')
     .trim()
     .notEmpty().withMessage('Message is required.')
-    .isLength({ min: 10, max: 2000 })
-    .withMessage('Message must be between 10 and 2000 characters.'),
+    .isLength({ min: 1, max: 2000 })
+    .withMessage('Message must be between 1 and 2000 characters.'),
 ];
 
 // ── Public routes ─────────────────────────────────────────────────────────────

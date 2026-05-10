@@ -26,7 +26,11 @@ app.use(helmet());
 
 app.use(
   cors({
-    origin: '*',
+    origin: [
+  'https://pritamrabha.com',
+  'https://www.pritamrabha.com',
+  'http://localhost:5173',
+],
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   }),
